@@ -41,6 +41,7 @@ function createList(items, container, isCharacterList, clickCallback) {
 function createPagination(container, totalItems, callback, characterId) {
     const pages = Math.ceil(totalItems / limit);
     const pagination = document.createElement("div");
+    pagination.classList.add("pagination")
 
     if (currentPage > 0) {
         const prevLink = document.createElement("a");

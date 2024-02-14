@@ -1,6 +1,9 @@
 body{
     margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 img{
@@ -30,4 +33,22 @@ img{
 
 #characters li span{
     width: 100%; 
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination a{
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 80%);
+}
+.pagination a:hover{
+    background-color: hsl(0, 0%, 60%);
+}
+.pagination a:active{
+    background-color: hsl(0, 0%, 90%);
 }

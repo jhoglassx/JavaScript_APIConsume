@@ -1,8 +1,8 @@
 import { publicKey, privateKey } from '../data/keysApi.js';
 const ts = Math.floor(Date.now()/1000);
 const hash = CryptoJS.MD5(ts+privateKey+publicKey);
-const queryString = `&ts=${ ts } &apikey=${ publicKey }&hash=${ hash }`
-console.log(hash);
+const queryString = `&ts=${ ts }&apikey=${ publicKey }&hash=${ hash }`
+console.log(queryString);
 
 const baseUrl = "https://gateway.marvel.com/v1/public/"
 
